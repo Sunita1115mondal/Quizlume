@@ -264,8 +264,4 @@ Before deploying, configure production environment variables, database access, a
 - Environment files containing secrets must never be committed to GitHub.
 - Use strong JWT secrets and production-specific database credentials.
 
-## Acknowledgement
 
-This project is based on the original [Interactive Quiz App](https://github.com/RMR0304/Interactive-Quiz-App) repository, with additional customization and interface improvements.
-
-Please review the original repository's license and preserve any required attribution and notices before redistributing the project.
