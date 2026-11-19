@@ -43,7 +43,7 @@ This guide covers deploying the Quiz App to production.
    - Copy the connection string
    - Replace `<password>` with your database user password
    - Replace `<dbname>` with `quiz_app` (or your choice)
-   - Example: `mongodb+srv://<db_username>:<db_password>@<cluster-host>/<database>?retryWrites=true&w=majority`
+   - Example: `mongodb+srv://<db_username>:<db_password>@<cluster-host>/<database>`
 
 ---
 
@@ -240,7 +240,7 @@ curl -X POST https://your-backend-url.onrender.com/api/auth/register \
 ### Backend (.env)
 ```env
 PORT=5000
-MONGO_URI=mongodb+srv://<db_username>:<db_password>@<cluster-host>/<database>?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://<db_username>:<db_password>@<cluster-host>/<database>
 JWT_SECRET=your-super-secret-jwt-key-change-this
 JWT_EXPIRES_IN=1d
 CORS_ORIGIN=https://your-frontend.vercel.app
@@ -333,4 +333,5 @@ If you encounter issues:
 3. Test API endpoints directly
 4. Check MongoDB Atlas connection
 5. Review browser console for frontend errors
+
 

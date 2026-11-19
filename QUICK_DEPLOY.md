@@ -17,7 +17,7 @@ Follow these steps to deploy your Quiz App:
    - Click "Connect" â†’ "Connect your application"
    - Copy the string
    - Replace `<password>` with your password
-   - Example: `mongodb+srv://<db_username>:<db_password>@<cluster-host>/<database>?retryWrites=true&w=majority`
+   - Example: `mongodb+srv://<db_username>:<db_password>@<cluster-host>/<database>`
 
 ### 2. Deploy Backend to Render (10 minutes)
 
@@ -102,7 +102,7 @@ curl -X POST https://your-backend.onrender.com/api/auth/register \
 ### Backend (Render)
 ```
 PORT=5000
-MONGO_URI=mongodb+srv://<db_username>:<db_password>@<cluster-host>/<database>?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://<db_username>:<db_password>@<cluster-host>/<database>
 JWT_SECRET=your-super-secret-key-32-chars-minimum
 JWT_EXPIRES_IN=1d
 CORS_ORIGIN=https://your-frontend.vercel.app
@@ -164,4 +164,5 @@ Or use an online generator: https://randomkeygen.com/
 ## ðŸ“š Full Documentation
 
 See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
+
 
